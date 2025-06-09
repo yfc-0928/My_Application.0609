@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ExerciseRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择日期:"
+                android:textSize="16sp"
+                android:layout_marginRight="8dp"/>
+
+            <Button
+                android:id="@+id/btnSelectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择日期"/>
+
+            <TextView
+                android:id="@+id/tvSelectedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天"
+                android:textSize="16sp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="今日训练计划"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etTrainingPlan"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:hint="输入今天的训练计划..."
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btnSavePlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存计划"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身高体重记录"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="身高(cm)"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:hint="体重(kg)"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveBodyData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存身体数据"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已完成训练内容"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etCompletedTraining"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:hint="输入已完成训练内容..."
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btnSaveCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存内容"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnAddContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="增加内容"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看训练历史记录"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

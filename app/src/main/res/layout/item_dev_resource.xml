@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"/>
+
+    <EditText
+        android:id="@+id/editUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/url_hint"
+        android:inputType="textUri"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/blue"
+        android:textColorLink="@color/blue"/>
+
+</LinearLayout>

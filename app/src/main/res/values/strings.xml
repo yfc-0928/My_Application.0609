@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">记录日常</string>
+
+    <string name="shopping_list">购物清单</string>
+    <string name="todo_list">To-Do</string>
+    <string name="dev_resources">Dev Resources</string>
+    <string name="photo_album">图片管理</string>
+    <string name="exercise">运动</string>
+
+    <string name="add_item">Add Item</string>
+    <string name="item_name_hint">Item name</string>
+
+    <string name="add_task">Add Task</string>
+    <string name="task_hint">Enter task</string>
+    <string name="show_completed">Show Completed</string>
+
+    <string name="add_resource">Add Resource</string>
+    <string name="save">Save</string>
+    <string name="url_hint">Enter URL</string>
+
+    <string name="add_photo">Add Photo</string>
+</resources>
